@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Retrofite Weather APi</string>
+    <string name="api_key">8699c2463184eec0bc3a91135a20a3d2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cityETHint">Введите город</string>
+    <string name="saveButtonText">Получить данные</string>
+    <string name="determineButtonText">Определить местоположение</string>
+</resources>
