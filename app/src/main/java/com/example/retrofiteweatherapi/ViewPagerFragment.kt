@@ -28,7 +28,6 @@ class ViewPagerFragment : Fragment() {
         val textView = view.findViewById<TextView>(R.id.textView)
         val cityET = view.findViewById<EditText>(R.id.cityET)
         val saveBT = view.findViewById<Button>(R.id.saveBT)
-        val determineBT = view.findViewById<Button>(R.id.determineBT)
         val viewPagerItem = arguments?.getSerializable("picture") as Picture
         textView.text = viewPagerItem.text
         imageView.setImageResource(viewPagerItem.image)
@@ -38,7 +37,6 @@ class ViewPagerFragment : Fragment() {
         if (!check){
             cityET.visibility = View.VISIBLE
             saveBT.visibility = View.VISIBLE
-            determineBT.visibility = View.VISIBLE
 
             saveBT.setOnClickListener {
                 val city = cityET.text.toString()
@@ -46,8 +44,6 @@ class ViewPagerFragment : Fragment() {
                 intent.putExtra("city", city)
                 startActivity(intent)
             }
-
-            determineBT.setOnClickListener {  }
         }
     }
 }
